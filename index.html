@@ -1,32 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+<link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Product preview card component</title>
 
   
 </head>
 <body>
+<main class="card">
+  <section class="card-container">
+    <picture class="perfume-image-container">
+      <source media="(min-width: 600px)" srcset="./images/image-product-desktop.jpg">
+      <img class="perfume-image" src="./images/image-product-mobile.jpg" alt="perfume image">
+    </picture>
+    <div class="conteudo-card">
+      <span class="categoria">
+        <h2>Perfume</h2>
+      </span>
+  
+      <section class="nome-produto">
+        <h1>
+          <strong>Gabrielle Essence Eau De Parfum</strong>
+        </h1>
+      </section>
+  
+      <article class="descricao-produto">
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.</p>
+      </article>
+      <p class="preço">
+        <span class="preço-atual">$149.99</span>
+        <span class="preço-anterior">$169.99</span>
+      </p>
+      <div class="add-to-cart-container">
+        <button class="add-to-cart"><img class="add-to-cart-img" src="images/icon-cart.svg" alt="">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+</main>
 
-  Perfume
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#"><a href="https://www.frontendmentor.io/profile/Gabriel4C3">Gabriel Carvalho</a></a>.
   </footer>
 </body>
 </html>

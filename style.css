@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Fraunces';
+    src: url(https://fonts.google.com/specimen/Fraunces?query=fraunces) format('truetype');
+    font-family: 'Montserrat';
+    src: url(https://fonts.google.com/specimen/Montserrat?query=montserrat) format('truetype');
+}
+
+   
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+    font-weight: 500;
+}
+.card-container {
+    display: grid;
+    justify-items: center;
+    height: 100%;
+ 
+}
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 600px;
+}
+.conteudo-card {
+    padding: 0px 30px 15px 30px;
+
+}
+.perfume-image {
+    justify-self: center;
+    width: 100%;
+}
+.categoria {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-size: 8px;
+    margin-top: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h1 {
+    margin:0px;
+}
+.nome-produto {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    margin-top: 0px;
+    font-weight: 700;
+}
+.descricao-produto {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    margin-top: 20px;
+}
+.preco {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.preço-atual {
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+    font-weight: 700;
+    font-family:'Fraunces', serif;
+    font-weight: 700;
+}
+.preço-anterior {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.add-to-cart-container {
+    display: flex;
+    justify-content: center;
+}
+.add-to-cart {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    align-self: center;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.add-to-cart:hover {
+    background-color: hsl(158, 44%, 31%);
+    
+}
+.add-to-cart-img {
+    margin-right: 10px;
+    color: white;
+}
+.add-to-cart-img:hover {
+    filter: brightness(0.8);
+}
+
+.preço {
+    margin-top: 20px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 60px;
+}
+@media (min-width: 700px) {
+    body{
+       display: grid;
+         place-items: center;
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        max-width: 800px;
+        max-height: 500px;
+        border-radius: 10px ;
+
+   
+    }
+    .conteudo-card {
+        padding: 0px 30px 15px 30px;
+    }
+    .card {
+        flex-direction: row;
+        max-width: 800px;
+        max-height: 595px;
+        border-radius: 10px;
+    }
+    .perfume-image {
+        width: 400px;
+        height: 500PX;
+        border-radius: 10px;
+        
+    }
+    .perfume-image-container{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border-radius: 10PX;
+    }
+    .descricao-produto{
+        font-size: 16px;
+    }
+    .categoria{
+        font-size: 10px;
+    }
+    
+    }
+     .preço-atual {
+        font-size: 40px;
+     }
+     .add-to-cart {
+        width: 300px;
+     }
+    }
+
+}
