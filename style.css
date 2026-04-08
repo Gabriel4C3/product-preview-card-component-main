@@ -51,6 +51,8 @@ h1 {
     margin:0px;
 }
 .nome-produto {
+    display: flex;
+    flex: auto;
     font-family: 'Fraunces', serif;
     font-size: 1.75rem;
     margin-top: 0px;
