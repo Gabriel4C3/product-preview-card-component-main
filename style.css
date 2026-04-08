@@ -137,7 +137,8 @@ h1 {
         padding: 0px 30px 15px 30px;
     }
     .card {
-        flex-direction: row;
+        flex-flow: row nowrap;
+        flex: auto;
         max-width: 800px;
         max-height: 595px;
         border-radius: 10px;
@@ -150,6 +151,7 @@ h1 {
     }
     .perfume-image-container{
         display: flex;
+        flex: auto;
         justify-content: start;
         align-items: center;
         border-radius: 10PX;
